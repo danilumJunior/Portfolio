@@ -1,82 +1,58 @@
-# 🧑‍💻 Portfólio Pessoal - Danilo Bomfim
+# Portfolio — Danilo Bomfim
 
-Este é meu portfólio pessoal desenvolvido com HTML e CSS. O objetivo do projeto é apresentar de forma clara e elegante quem sou, meus projetos, habilidades e formas de contato.
-
-![Screenshot do Portfólio](img/portifolio.png)
-
----
-
-## 🎯 Objetivo
-
-Criar uma **landing page** com um layout responsivo, moderno e escuro, destacando:
-
-- Informações pessoais
-- Projetos realizados
-- Habilidades técnicas
-- Contato profissional
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- **HTML5**
-- **CSS3**
-- **Responsividade com Flexbox e Grid**
-- Fontes e ícones externos (Google Fonts, Flaticon)
-- Tema escuro com destaque em roxo
-
----
-
-## 📌 Estrutura da Página
-
-### 📍 Header (menu fixo)
-- Navegação entre seções
-- Estilo roxo com destaque visual
-
-### 📍 Sobre Mim
-- Imagem centralizada
-- Texto sobre trajetória
-- Ícones de GitHub, LinkedIn e Instagram com efeitos visuais
-- Menção ao aprendizado da metodologia **Scrum**
-
-### 📍 Projetos
-Lista de projetos desenvolvidos, com imagens e descrições:
-- **Enocycle** – projeto sobre sustentabilidade com banco de dados e mapa mental
-- **Spotify Clone** – interface similar ao Spotify (HTML/CSS/JS)
-- **Conversor de Medidas** – em C, com modularização
-- **Página de Livros** – com Swiper.js
-- **Protótipo de Vídeos** – layout inspirado no YouTube
-- **Formulário para Evento** – com apresentação de palestrantes e inscrição
-
-### 📍 Habilidades
-- C, Python, HTML, CSS, Git/GitHub, Comunicação
-- Exibidas com barras de progresso interativas
-
-### 📍 Contato
-- LinkedIn, telefone e email
-- Sem formulário (opção minimalista)
+<table border="0" width="100%">
+  <tr>
+    <td width="60%" valign="top" style="border: none;">
+      <p>Repositório destinado à hospedagem e versionamento do meu portfólio web pessoal. O projeto foi estruturado para consolidar e expor minhas principais competências em engenharia de sistemas, modelagem de dados e desenvolvimento de aplicações funcionais.</p>
+      <p>A arquitetura da página reflete uma abordagem minimalista e de alta legibilidade, focando no detalhamento técnico dos projetos desenvolvidos e na organização clara da minha stack de tecnologia.</p>
+      <br>
+      <h3>Core Specifications</h3>
+      <ul>
+        <li>Interface responsiva adaptada para múltiplos dispositivos.</li>
+        <li>Layout estruturado via CSS Grid e Flexbox nativos.</li>
+        <li>Identidade visual baseada em paleta de cores de baixo contraste para ambientes escuros (Dark Mode).</li>
+      </ul>
+    </td>
+    <td width="40%" valign="top" style="border: none; padding-left: 30px;">
+      <h3>Technologies Implemented</h3>
+      <strong>Structure & Style</strong>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3 (Variables & Grid System)</li>
+      </ul>
+      <strong>Featured Stack Context</strong>
+      <ul>
+        <li>Python & Java Architecture</li>
+        <li>PostgreSQL & Supabase</li>
+        <li>JavaScript & React Ecosystem</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🎨 Tema & Estilo
+## Project Structure
 
-- Fundo escuro (`#121212`)
-- Destaques em tons de roxo (`#9575cd`, `#b39ddb`)
-- Interface limpa e responsiva
-- Ícones que mudam ao passar o mouse
-- Menu com efeito de foco e sombra
+O arquivo principal contém as seguintes seções estruturadas:
+
+1. **About Me:** Resumo profissional focado em Systems Information, desenvolvimento de software de ponta a ponta e automação de fluxos de dados com Python (Pandas).
+2. **Technical Skills:** Divisão categórica de linguagens de programação, sistemas de gerenciamento de banco de dados (SGBD) e ferramentas de controle de versão.
+3. **Featured Projects:** Detalhamento técnico e links diretos para os repositórios das principais aplicações desenvolvidas, incluindo sistemas com controle de acesso (RBAC) e integrações com APIs de inteligência artificial.
+4. **Academic Background & Contact:** Informações sobre a graduação corrente e canais formais de comunicação.
 
 ---
 
-## 🚀 Como visualizar
+## Deployment and Presentation
 
-Você pode abrir o arquivo `index.html` diretamente no navegador:
+Para visualizar a interface em ambiente de produção, o projeto pode ser executado localmente através da renderização do arquivo estrutural ou acessado diretamente via ambiente de hospedagem:
+
+* **Production URL:** [danilumjunior.github.io](https://danilumJunior.github.io/)
+* **Local Execution:** Clonar o repositório e executar o arquivo `index.html` em qualquer navegador web moderno.
 
 ```bash
-📁 projeto/
+# Clonar o repositório
+git clone [https://github.com/danilumJunior/portfolio.git](https://github.com/danilumJunior/portfolio.git)
 
-├── index.html
-
-├── style.css
-
-└── imagens/
+# Acessar o diretório do projeto
+cd portfolio
