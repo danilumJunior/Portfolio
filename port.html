@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danilo Bomfim — Portfólio</title>
+  <style>
+    /* PALETA TOKYONIGHT / MINIMALISTA ESCURO */
+    :root {
+      --bg-principal: #1a1b26;
+      --bg-card: #24283b;
+      --texto-claro: #a9b1d6;
+      --texto-destaque: #ffffff;
+      --azul-accent: #7aa2f7;
+      --roxo-accent: #bb9af3;
+      --borda: #414868;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--texto-claro);
+      background-color: var(--bg-principal);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 30px;
+    }
+
+    /* GRID INVISÍVEL NO TOPO */
+    .grid-topo {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    /* HEADER / ABOUT */
+    header h1 {
+      font-size: 32px;
+      color: var(--texto-destaque);
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--azul-accent);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      text-align: justify;
+      color: var(--texto-claro);
+      margin-bottom: 20px;
+    }
+
+    /* COLUNA DA DIREITA - SKILLS */
+    .skills-sidebar {
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda);
+      padding: 24px;
+      border-radius: 6px;
+    }
+
+    .skills-sidebar h3 {
+      color: var(--texto-destaque);
+      margin-bottom: 16px;
+      font-size: 16px;
+      border-bottom: 1px solid var(--borda);
+      padding-bottom: 6px;
+    }
+
+    .skill-group {
+      margin-bottom: 14px;
+    }
+
+    .skill-group strong {
+      color: var(--roxo-accent);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* SEÇÕES DE PROJETOS E HISTÓRICO */
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--texto-destaque);
+      margin: 40px 0 20px;
+      border-bottom: 2px solid var(--azul-accent);
+      padding-bottom: 4px;
+      width: fit-content;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .proj-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda);
+      padding: 20px;
+      border-radius: 6px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .proj-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--azul-accent);
+    }
+
+    .proj-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .proj-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--texto-destaque);
+    }
+
+    .proj-link {
+      font-size: 13px;
+      color: var(--azul-accent);
+      text-decoration: none;
+    }
+
+    .proj-link:hover {
+      text-decoration: underline;
+    }
+
+    .proj-stack {
+      font-size: 12px;
+      color: var(--roxo-accent);
+      margin-bottom: 10px;
+      font-family: monospace;
+    }
+
+    /* DOIS BLOCOS LADO A LADO EMBAIXO */
+    .two-col-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .info-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda);
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    .info-card h4 {
+      color: var(--texto-destaque);
+      margin-bottom: 8px;
+    }
+
+    .contact-links a {
+      color: var(--azul-accent);
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 800px) {
+      .grid-topo, .two-col-footer {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        padding: 30px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="grid-topo">
+      
+      <div>
+        <header>
+          <h1>Danilo Bomfim Moreira Junior</h1>
+          <div class="subtitle">Desenvolvedor Full-Stack | Back-End Engineering</div>
+        </header>
+        <p class="about-text">
+          Estudante de Sistemas de Informação (3° semestre) com experiência prática em infraestrutura, automação de processos e desenvolvimento de aplicações web. 
+          Especializado no desenvolvimento de scripts em Python utilizando a biblioteca Pandas para otimização e processamento de dados corporativos (Excel/CSV).
+        </p>
+        <p class="about-text">
+          Focado na criação de arquiteturas completas que unem back-end robusto, modelagem de banco de dados e interfaces web dinâmicas. Desenvolvo sistemas reais com foco em segurança, fluxos de autenticação, controle de permissões de acesso e integrações de serviços com Inteligência Artificial.
+        </p>
+      </div>
+
+      <div class="skills-sidebar">
+        <h3>🛠️ Technical Skills</h3>
+        <div class="skill-group">
+          <strong>Languages</strong>
+          <span>Python, Java, JavaScript, SQL, C</span>
+        </div>
+        <div class="skill-group">
+          <strong>Databases</strong>
+          <span>PostgreSQL, MySQL, Supabase</span>
+        </div>
+        <div class="skill-group">
+          <strong>Tools & Frameworks</strong>
+          <span>Git, GitHub, React, Streamlit</span>
+        </div>
+        <div class="skill-group">
+          <strong>Methodologies</strong>
+          <span>Agile Development, UX/UI Integration</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-title">Projetos em Destaque</div>
+    
+    <div class="projects-grid">
+
+      <div class="proj-card">
+        <div class="proj-header">
+          <span class="proj-name">Plataforma de Gestão com Controle de Acesso</span>
+          <a class="proj-link" href="https://github.com/danilumJunior/Critica" target="_blank">View on GitHub ↗</a>
+        </div>
+        <div class="proj-stack">Python • Streamlit • Supabase • PostgreSQL</div>
+        <p class="about-text">
+          Sistema web completo estruturado com autenticação robusta de usuários e controle de permissões por nível de acesso (RBAC). Conta com gerenciamento seguro de sessões, regras de Row Level Security (RLS) diretamente no banco e automações por meio de triggers, mimetizando uma arquitetura de ambiente corporativo real.
+        </p>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-header">
+          <span class="proj-name">Assistente de Meta</span>
+          <a class="proj-link" href="https://github.com/danilumJunior/Assistente-de-Meta" target="_blank">View on GitHub ↗</a>
+        </div>
+        <div class="proj-stack">JavaScript • HTML • CSS • Gemini API</div>
+        <p class="about-text">
+          Aplicação interativa desenvolvida para gerenciamento de metas e objetivos complexos em jogos. Integra a Inteligência Artificial do Gemini para gerar feedbacks de progresso, insights lógicos e suporte intuitivo para o usuário, priorizando boas práticas de design de interface e fluidez de navegação.
+        </p>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-header">
+          <span class="proj-name">Star Player (Spotify Clone)</span>
+          <a class="proj-link" href="https://github.com/danilumJunior/Spotify-clone" target="_blank">View on GitHub ↗</a>
+        </div>
+        <div class="proj-stack">HTML • CSS • JavaScript</div>
+        <p class="about-text">
+          Desenvolvimento front-end avançado focado na replicação fiel da interface do Spotify. Projeto focado no domínio de posicionamento, responsividade fluida para múltiplos tamanhos de tela, componentização sem frameworks e refinamento estético da experiência do usuário.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="two-col-footer">
+      
+      <div>
+        <div class="section-title">Formação Acadêmica</div>
+        <div class="info-card">
+          <h4>Sistemas de Informação</h4>
+          <p style="color: var(--azul-accent);">Centro Universitário Jorge Amado (UNIJORGE)</p>
+          <p style="font-size: 12px; margin-top: 4px;">2025 — Em andamento (3° Semestre) · Período Noturno</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Contato & Conexões</div>
+        <div class="info-card contact-links">
+          <h4>E-mail Profissional</h4>
+          <p style="margin-bottom: 12px;"><a href="mailto:danilobomfim.dev@gmail.com">danilobomfim.dev@gmail.com</a></p>
+          
+          <h4>Redes</h4>
+          <a href="https://linkedin.com/in/danilo-junior-b92b9b263" target="_blank">LinkedIn</a>
+          <a href="https://github.com/danilumJunior" target="_blank">GitHub</a>
+          <a href="https://wa.me/5571987312311" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
