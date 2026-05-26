@@ -20,12 +20,6 @@
         <li>HTML5</li>
         <li>CSS3 (Variables & Grid System)</li>
       </ul>
-      <strong>Featured Stack Context</strong>
-      <ul>
-        <li>Python & Java Architecture</li>
-        <li>PostgreSQL & Supabase</li>
-        <li>JavaScript & React Ecosystem</li>
-      </ul>
     </td>
   </tr>
 </table>
